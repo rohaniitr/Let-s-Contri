@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_history_of_expenses" android:title="History Of Expenses"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:icon="@drawable/icon_ticket_blue"/>
+
+    <item android:id="@+id/action_calculate_shares" android:title="Calculate The Shares"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:icon="@drawable/icon_analytics_blue"/>
+
+    <item android:id="@+id/action_start_new" android:title="Start New Contri"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:icon="@drawable/icon_group_blue"/>
+
+    <item android:id="@+id/action_personal_notes" android:title="Personal Notes"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:icon="@drawable/icon_edit_blue"/>
+
+    <item android:id="@+id/action_help" android:title="Help"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:icon="@drawable/icon_feedback_blue"/>
+
+</menu>

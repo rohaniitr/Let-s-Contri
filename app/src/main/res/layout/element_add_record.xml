@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:clickable="true" android:focusable="true"
+    android:background="?android:attr/selectableItemBackground" android:id="@+id/rlNotificationElement">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="14sp" android:id="@+id/rlAddRecordElementInner">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="@color/custom_primary_text_color"
+            android:id="@+id/tvAddRecordName" android:layout_centerVertical="true"/>
+
+        <CheckBox
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/cbAddRecordSelected" android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" android:layout_marginLeft="8sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent" android:layout_height="1sp"
+        android:background="@color/custom_primary_dark_color" android:layout_below="@id/rlAddRecordElementInner"/>
+
+</RelativeLayout>

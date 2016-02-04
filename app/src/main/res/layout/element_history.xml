@@ -1,0 +1,77 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" android:clickable="true"
+    android:focusable="true" android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="8dp" android:elevation="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent" android:layout_height="32sp"
+                android:background="#039BE5"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tvHistorySerialNumber" android:textColor="@color/custom_button_text_color"
+                android:layout_centerInParent="true" android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="24sp" android:layout_marginRight="24sp"
+            android:layout_marginBottom="14sp" android:layout_marginTop="12sp">
+
+            <ImageButton
+                android:layout_width="32sp" android:layout_height="32sp"
+                android:background="@drawable/icon_edit_blue" android:layout_alignParentRight="true"
+                android:id="@+id/ibHistoryEdit" android:backgroundTint="@color/custom_primary_color"/>
+
+            <ImageButton
+                android:layout_width="32sp" android:layout_height="32sp"
+                android:background="@drawable/icon_delete_blue" android:layout_toLeftOf="@id/ibHistoryEdit"
+                android:id="@+id/ibHistoryDelete" android:layout_marginRight="8sp"
+                android:backgroundTint="@color/custom_primary_color"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/custom_primary_text_color" android:textSize="24sp"
+                android:id="@+id/tvHistoryName" android:layout_marginRight="8sp"
+                android:layout_alignParentLeft="true" android:layout_toLeftOf="@id/ibHistoryDelete"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="24sp" android:layout_marginRight="24sp"
+            android:layout_marginBottom="4sp">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/custom_secondary_text_color" android:textSize="14sp"
+                android:id="@+id/tvHistoryTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/custom_secondary_text_color" android:textSize="14sp"
+                android:id="@+id/tvHistoryAmount" android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/custom_secondary_text_color" android:textSize="14sp"
+            android:id="@+id/tvHistoryParticipants" android:layout_marginBottom="24sp"
+            android:layout_marginLeft="24sp" android:layout_marginRight="24sp"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

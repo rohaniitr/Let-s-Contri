@@ -1,0 +1,25 @@
+<resources>
+
+    <!--Material design-->
+    <style name="CustomBlueMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/custom_primary_light_color</item>
+        <item name="colorPrimary">@color/custom_primary_color</item>
+        <item name="colorPrimaryDark">@color/custom_primary_dark_color</item>
+    </style>
+
+    <!--Dialog Animation Design-->
+    <style name="CustomRightDialogAnimation" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+    <style name="CustomLeftDialogAnimation" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/left_in</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+    <style name="CustomFadeDialogAnimation" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

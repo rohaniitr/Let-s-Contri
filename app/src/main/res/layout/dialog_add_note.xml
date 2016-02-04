@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_margin="24sp">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Enter The Note" android:id="@+id/tvAddNoteTitle"
+            android:textColor="@color/custom_primary_color" android:textSize="24sp"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="24sp"/>
+
+        <ImageButton
+            android:layout_width="match_parent" android:layout_height="1sp"
+            android:layout_below="@id/tvAddNoteTitle" android:id="@+id/ivAddNoteDivider"
+            android:background="@color/custom_primary_dark_color" android:layout_marginBottom="24sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:id="@+id/tilAddNoteNote" android:layout_below="@id/ivAddNoteDivider"
+            android:layout_marginBottom="24sp">
+            <EditText
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Note" android:id="@+id/etAddNoteNote"
+                android:inputType="textCapSentences"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@drawable/icon_tick_white" app:backgroundTint="@color/custom_primary_dark_color"
+            app:fabSize="normal" android:layout_centerHorizontal="true"
+            android:layout_marginTop="14sp" android:layout_marginBottom="24sp"
+            android:id="@+id/fabAddNoteDone" android:layout_below="@id/tilAddNoteNote"/>
+
+    </RelativeLayout>
+</ScrollView>

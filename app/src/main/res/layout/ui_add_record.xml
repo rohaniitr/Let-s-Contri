@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/clAddRecord" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_margin="14sp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Title (optional)" android:id="@+id/etAddRecordTitle"
+                android:inputType="textCapWords"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8sp">
+            <EditText
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Amount" android:id="@+id/etAddRecordAmount"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14sp">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tvAddRecordSpinnerText" android:text="Who is paying? : "
+                android:textSize="14sp" android:textColor="@color/custom_secondary_text_color"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:minWidth="100sp" android:layout_alignParentRight="true"
+                android:id="@+id/sAddRecordNameList" android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/icon_add_white" app:backgroundTint="@color/custom_primary_dark_color"
+        app:fabSize="normal" android:layout_margin="16dp"
+        android:id="@+id/fabAddRecordAdd" android:layout_gravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>

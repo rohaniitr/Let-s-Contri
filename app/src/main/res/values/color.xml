@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_background">#219bce</color>
+    <color name="white">#ffffff</color>
+
+    <color name="custom_primary_color">#219bce</color>
+    <color name="custom_primary_dark_color">#1a7ba3</color>
+    <color name="custom_primary_light_color">#eaeaea</color>
+    <color name="custom_accent_color">#ffffff</color>
+
+    <color name="custom_button_text_color">#ffffff</color>
+    <color name="custom_primary_text_color">#666666</color>
+    <color name="custom_secondary_text_color">#727272</color>
+    <color name="custom_divider_color">#b6b6b6</color>
+
+    <color name="custom_blue_button_unpressed">#1a7ba3</color>
+    <color name="custom_blue_button_pressed">#00adef</color>
+</resources>

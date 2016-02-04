@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"Let's Contri "</string>
+
+    <string name="openDrawer">"Open"</string>
+    <string name="closeDrawer">"Close"</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2607535006059036/1162767707</string>
+</resources>

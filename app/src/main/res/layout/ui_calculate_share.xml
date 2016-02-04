@@ -1,0 +1,28 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/clCalculateShare" >
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/rlCalculateSharePermanent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCalculateShare" android:scrollbars="vertical"
+            android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/rlCalculateShareEmpty" android:visibility="gone">
+
+        <com.rohansarkar.letscontri.TextViewComicSans
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvCalculateShareEmpty" android:textColor="@color/custom_primary_text_color"
+            android:textSize="26sp" android:layout_centerInParent="true"
+            android:text="Everything is settled.\nNo exchange required."/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

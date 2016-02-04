@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/clStartNew" >
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/rlStartNew">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:id="@+id/tbStartNew" android:background="@color/custom_primary_color"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@drawable/icon_add_white" app:backgroundTint="@color/custom_primary_dark_color"
+            app:fabSize="normal" android:layout_alignParentRight="true"
+            android:id="@+id/fabStartNewAdd" android:layout_below="@id/tbStartNew"
+            android:layout_marginRight="24sp" android:layout_marginTop="24sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/fabStartNewAdd" android:layout_below="@id/tbStartNew"
+            android:layout_marginLeft="24sp" android:layout_marginTop="24sp">
+            <EditText
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Enter the names" android:id="@+id/etStartNewName"
+                android:inputType="textCapWords"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvStartNew" android:scrollbars="vertical"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_below="@id/fabStartNewAdd" android:layout_marginTop="24sp"
+            android:layout_marginRight="24sp" android:layout_marginLeft="24sp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/icon_tick_white" app:backgroundTint="@color/custom_primary_dark_color"
+        app:fabSize="normal" android:layout_margin="16dp"
+        android:id="@+id/fabStartNewDone" android:layout_gravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>

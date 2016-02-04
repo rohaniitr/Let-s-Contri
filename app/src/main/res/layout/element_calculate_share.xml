@@ -1,0 +1,47 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" android:clickable="true"
+    android:focusable="true" android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="8dp" android:elevation="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent" android:layout_height="32sp"
+                android:background="#9bce21"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tvCalculateShareSerialNumber" android:textColor="@color/custom_button_text_color"
+                android:layout_centerInParent="true" android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/custom_primary_text_color" android:textSize="24sp"
+            android:layout_marginLeft="24sp" android:layout_marginRight="24sp"
+            android:layout_marginBottom="14sp" android:layout_marginTop="12sp"
+            android:id="@+id/tvCalculateSharePayer"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/custom_secondary_text_color" android:textSize="14sp"
+                android:id="@+id/tvCalculateShareAmount" android:layout_marginBottom="24sp"
+                android:layout_marginLeft="24sp" android:layout_marginRight="24sp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

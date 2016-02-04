@@ -1,0 +1,34 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/clHistory" >
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/rlHistoryPermanent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvHistory" android:scrollbars="vertical"
+            android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/rlHistoryFirst" android:visibility="gone">
+
+        <com.rohansarkar.letscontri.TextViewComicSans
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvHistoryFirst" android:textColor="@color/custom_primary_text_color"
+            android:textSize="26sp" android:layout_centerInParent="true"
+            android:text="History is Empty.\nTap here to enter\nfirst transaction."/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/icon_add_white" app:backgroundTint="@color/custom_primary_dark_color"
+        app:fabSize="normal" android:layout_margin="16dp"
+        android:id="@+id/fabHistoryAdd" android:layout_gravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>
